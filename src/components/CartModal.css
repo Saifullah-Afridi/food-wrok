@@ -1,0 +1,34 @@
+/* CartModal.css */
+.cart-modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end; /* Align the modal to the right */
+  align-items: flex-start; /* Align the modal to the top */
+  z-index: 1000;
+}
+
+.cart-modal-content {
+  background: #fff;
+  color: black;
+  padding: 20px;
+  border-radius: 8px 0 0 8px; /* Rounded corners on the left side */
+  width: 300px; /* Fixed width for the modal */
+  height: 100%; /* Full height */
+  overflow-y: auto; /* Add scroll if content overflows */
+  position: relative;
+}
+
+.cart-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
